@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="Author" content="" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no,target-densitydpi=medium-dpi">
+
+    <title>B - project studio B</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- 파비콘 -->
+    <link rel="apple-touch-icon-precomposed" href="icon57.png">
+    <!-- 모바일 웹 브라우저 상단에 나타나는 아이콘 -->
+    <link rel="apple-touch-icon-precomposed" sizes="114*114" href="icon114.png">
+    <!-- 홈화면 추가 아이콘 -->
+
+    <link href="css/default.css?v=180914" rel="stylesheet" type="text/css" />
+    <!-- CSS -->
+    <link href="css/screen.css?v=1" rel="stylesheet" type="text/css" />
+
+    <!--[if lt IE 9]>
+		//익스 9 이하일 경우
+		<script type="text/javascript" src="js/respond.js"></script>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script>
+        // <![CDATA[
+        try {
+            window.addEventListener('load', function() {
+                setTimeout(scrollTo, 0, 0, 1);
+            }, false);
+        } catch (e) {}
+        // ]]>
+
+    </script>
+    <script src="https://use.typekit.net/wqo1brh.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+
+    </script>
+</head>
+
+<body>
+
+    <div class="border_wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <style type="text/css" media="screen">
+        .stroke_wrap div{background: rgba(255, 255, 255, 0.05)}
+    </style>
+    <div class="stroke_wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="main_con">
+        <h1>
+            <span>Truly</span>
+            <p>I'm very cuty sexy beauty elegance Truly</p>
+        </h1>
+        <ul class="nav fix">
+            <li><a href="/projects/" data-text="projects">진실이의 귀여움</a></li>
+            <li><a href="/who-we-are/" data-text="who we are">진실이의 아름다움</a></li>
+            <li><a href="/cafe-1flf/" data-text="café. first floor">진실이의 도도함</a></li>
+            <li><a href="/get-in-touch/" data-text="get in touch">고양이 진실</a></li>
+        </ul>
+    </div>
+
+
+    <div id="maximage">
+        <img src="/img/main_bg_01.jpg" />
+        <img src="/img/main_bg_02.jpg" />
+        <img src="/img/main_bg_03.jpg" />
+        <img src="/img/main_bg_04.jpg" />
+        <img src="/img/main_bg_05.jpg" />
+        <img src="/img/main_bg_06.jpg" />
+    </div>
+
+    <script src="/js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript" charset="utf-8">
+        $(function() {
+            // Trigger maximage
+            jQuery('#maximage').maximage();
+        });
+
+    </script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
